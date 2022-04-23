@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-image: linear-gradient(90deg, rgb(58, 1, 62), rgb(31, 0, 33));
+}
+
+.container {
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.elemento1 {
+    width: 300px;
+    height: 450px;
+    transition: transform .8s linear;
+    background-image: url(https://www.freevector.com/uploads/vector/preview/26316/Space_rocket.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 3rem;
+}
+
+.elemento2 {
+    background-color: wheat;
+    width: 300px;
+    height: 125px;
+    transition: transform .8s linear;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+}
+
+.elemento3 {
+    width: 300px;
+    height: 125px;
+    background-color: darkslategrey;
+    transition: transform .8s linear;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.elemento4 {
+    width: 300px;
+    height: 450px;
+    background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/22/419405-digital_art-universe-space-space_art-planet-Solar_System-Sun-Mercury-Venus-Earth-Mars-Jupiter-Saturn-Uranus-Neptune-Pluto-black_background-portrait_display-asteroid.jpg);
+    transition: transform .8s linear;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    font-size: 6rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.brilho {
+    box-shadow: 0 0 30px white;
+    width: 400px;
+    height: 100px;
+    border-radius: 200px / 50px;
+    transition: transform .8s linear;
+    position: relative;
+    left: -50px;
+}
+
+.elemento1.active, .elemento2.active, .elemento3.active, .elemento4.active {
+    transform: translateY(-700px);
+}
+
+.brilho.active {
+    transform: translateY(-721px);
+}
