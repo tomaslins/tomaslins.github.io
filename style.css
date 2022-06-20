@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P';
+    background-image: linear-gradient(to right, rgb(80, 82, 102), rgb(57, 59, 73));
+    display: grid;
+    line-height: 2rem;
+    width: 100vw;
+}
+
+
+
+/*BARRA DE NAVEGAÇÃO*/
+
+.nav-container {
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    z-index: 10;
+}
+
+.nav-container ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding-right: 2rem;
+}
+
+.nav-container ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-container ul a:nth-child(2) {
+    margin-left: auto;
+}
+
+.logo {
+    cursor: default;
+}
+
+/* SOCIAL */
+
+.social { 
+    border: 2px solid black;
+    background-color: rgb(0, 255, 4);
+    position: fixed;
+    right: 0;
+    top: 22%;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 2rem;
+    box-shadow: 5px 5px;
+    z-index: 100;
+}
+
+.fa-brands {
+    color: black;
+    cursor: pointer;
+}
+
+
+/*BANNER PRINCIPAL*/
+
+.banner { 
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    padding: 10rem 8rem 12rem 8rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    width: 65%;
+    background-color: blueviolet;
+    box-shadow: 10px 10px;
+    justify-self: center;
+}
+
+.banner-left {
+    background-color: rgb(255, 0, 217);
+    padding: 1rem 2rem;
+    box-shadow: 10px 10px;
+    margin-top: -2rem;
+    min-width: 9rem;
+    max-width: 60%;
+    position: relative;
+}
+
+.bolts {
+    position: absolute;
+    top: -0.9rem;
+    right: 1rem;
+    color: yellow;
+    text-shadow: 1px 1px black;
+}
+
+.bolt-top {
+    width: 5rem;
+    position: absolute;
+    right: 0;
+    top: -1rem;
+}
+
+.bolts i:nth-child(2) {
+    position: relative;
+    top: 0.6rem;
+}
+
+.banner-right {
+    position: relative;
+    top: -7rem;
+    right: -2rem;
+}
+
+.profile-img {
+    background-image: url(img/computer.png);
+    height: 30rem;
+    width: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform:scaleX(-1) ;
+}
+
+.slogan p{
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.main-btn {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    font-weight: bold;
+    box-shadow: 3px 3px;
+    cursor: pointer;
+}
+
+.main-btn:hover, .banner-down:hover, .fa-brands:hover, .about-down:hover {
+    transform: scale(1.05);
+}
+
+.banner-down {
+    position: relative;
+    bottom: -300px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+/*ABOUT*/
+
+#aboutme {
+    position: absolute;
+    margin-top: 44rem;
+}
+
+.about {
+    display: grid;
+    text-align: center;
+    padding-bottom: 110px;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 5px 5px black;
+}
+
+.about-content {
+    text-align: left;
+    margin: auto;
+    width: 78%;
+    background-color: aqua;
+    padding: 1rem 2rem;
+    box-shadow: 10px 10px;
+}
+
+.avatar {
+    background-image: url(img/firefighter.png);
+    background-size: cover;
+    height: 8rem;
+    width: 8rem;
+    position: relative;
+    margin: auto;}
+
+.about-down {
+    position: relative;
+    bottom: -100px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    width: 82%;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.portfolio-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 5px 5px black;
+    margin-bottom: 3rem;
+}
+
+.portfolio-splits {
+    width: calc(90% + 2rem);
+    background-color:rgb(127, 236, 255);
+    box-shadow: 10px 10px;
+    margin: auto;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 3rem;
+}
+
+.split {
+    background-color:white;
+    box-shadow: 5px 5px;
+    height: 80%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.split:hover {
+    transform: scale(1.05);
+}
+
+.split img {
+    width: 100%;
+}
+
+.portfolio-down {
+    position: relative;
+    left: calc(50% - 1rem);
+    bottom: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+/* IMAGES */
+
+.img-bg {
+    background-color: rgba(57, 59, 73, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 1000;
+}
+
+.img-bg span {
+    display: block;
+    position: relative;
+    top: 2rem;
+    right: 3rem;
+    text-align: right;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 3px 3px black;
+    cursor: pointer;
+}
+
+.img-bg img {
+    height: 90vh;
+    width: auto;
+    display: none;
+    margin: auto;
+}
+
+/* CONTACT */
+
+.contact {
+    width: 100%;
+    height: 80vh;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 5px 5px black;
+}
+
+.contact-container {
+    width: 74%;
+    background-color: rgb(255, 0, 217);
+    box-shadow: 10px 10px;
+    margin: auto;
+    padding: 2rem 4rem 4rem 4rem;
+    position: relative;
+}
+
+.contact-container a {
+    color: 
+    black;
+}
+
+#home {
+    transform: rotate(180deg);
+}
+
+.bolt-yellow {
+    width: 5rem;
+    position: absolute;
+    right: 2rem;
+}
+
+/* MEDIA QUERIES */
+
+
+/* TABLET */
+
+@media screen and (max-width: 1200px) {
+
+    .body {
+        background-repeat: no-repeat;
+    }
+    
+    .banner {
+        display: flex;
+        flex-direction: column;
+        padding: 8rem 6rem 6rem 6rem;
+    }
+
+    .banner-left {
+        width: 50%;
+        align-self: flex-start;
+    }
+
+    .profile-img {
+        width: 20rem;
+        background-size: contain;
+        position: absolute;
+        right: -4rem;
+        bottom: -26.5rem;
+    }
+
+    .slogan {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-btn {
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .portfolio {
+        margin-top: -4rem;
+    }
+
+    .portfolio-splits {
+        flex-wrap: wrap;
+        position: relative;
+        width: 91%;
+        left: -1rem;
+        height: auto;
+    }
+
+    .split {
+        margin-bottom: 20px;
+    }
+
+    .fa-chevron-down {
+        visibility: hidden;
+    }
+
+    .contact {
+        width: 95%;
+        position: relative;
+        left: 1.5rem;
+        margin-top: 0;
+    }
+
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+
+    .body {
+        background-repeat: no-repeat;
+        padding: 0 3rem;
+    }
+    
+    .banner {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        padding: 8rem 4rem 6rem 4rem;
+        align-items: center;
+    }
+
+    .banner-left {
+        max-width: 90%;
+        width: 100%;
+        text-align: center;        
+    }
+
+    .bolt-top {
+        position: relative;
+        right: -1.5rem;
+    }
+
+    .profile-img, .fa-chevron-down {
+        visibility: hidden;
+    }
+
+    .slogan {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-btn {
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .portfolio-splits {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 89%;
+        position: relative;
+        left: -1rem;
+        height: auto;
+    }
+
+    .split {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .contact {
+        width: 92%;
+        margin: auto;
+        margin-bottom: 3rem;
+        position: relative;
+        left: 0rem;
+    }
+
+    .nav-container a {
+        visibility: hidden;
+    }
+
+    .social {
+        flex-direction: row;
+        top: 0;
+        right: 2rem;
+    }
+
+}

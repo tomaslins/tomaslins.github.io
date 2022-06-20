@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!----EXTERNAL CSS----->
+
+    <link rel="stylesheet" href="style.css">
+
+        <!----FONT AWESOME----->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Prototipo</title>
+</head>
+<body>
+
+    <!----BARRA DE NAVEGAÇÃO----->
+
+    <nav class="nav-container">
+        <ul>
+            <li class="logo">T.S.LINS</li>
+            <a href="#"><li>Home</li></a>
+            <a href="#aboutme"><li>About</li></a>
+            <a href="#portfolio"><li>Portfolio</li></a>
+            <a href="#contact"><li>Contact</li></a>
+
+        </ul>
+    </nav>
+
+    <!------SOCIAL------>
+
+    <section class="social">
+        <a href="#contact"><i class="fa-brands fa-facebook-square"></i></a>
+        <a href="#contact"><i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#contact"><i class="fa-brands fa-linkedin"></i>
+        </a>
+    </section>
+
+    <!-----BANNER PRINCIPAL------>
+
+    <section class="banner">
+        <div class="banner-left">
+            <h2>T.S.LINS</h2>
+            <p>WEB DEV</p>
+            <div class="bolts">
+                <img src="img/bolt yellow.png" alt="" class="bolt-top">  
+            </div>
+        </div>
+        <div class="banner-right">
+            <div class="profile-img"></div>
+        </div>
+        <div class="slogan">
+            <p>Frontend developer with focus on responsive design :p</p>
+            <button class="main-btn">GET IN TOUCH</button>
+        </div>
+        <a href="#aboutme"><i class="fa-solid fa-chevron-down banner-down" id="about"></i></a>
+    </section>
+
+    <div id="aboutme"></div>
+
+    <!--------ABOUT-------->
+
+    <section class="about">
+        <h2 class="about-title">ABOUT ME</h2>
+        <div class="about-content">
+            <p>Hi,<br>
+                I'm a Web Developer<br>
+                After nearly a decade fighting fires, I decided to shift my career towards something more artistic. With a background in engineering (B.Sc. and M.Sc.), I've always been facinated by the digital world, as a place of comunication and endless creative possibilities.</p>
+            <div class="avatar"></div>
+        </div>
+        <a href="#portfolio"><i class="fa-solid fa-chevron-down about-down" id="portfolio"></i></a>
+    </section>
+
+    <!--------PORTFOLIO-------->
+
+    <section class="portfolio">
+        <h2 class="portfolio-title">PORTFOLIO</h2>
+        <div class="portfolio-splits">
+            <div class="split split-website">
+                <img src="img/readyrick  monitor.png" alt="" srcset="">
+                <p>Responsive Website</p>
+            </div>
+            <div class="split split-landing">
+                <img src="img/landing page monitor.png" alt="" srcset="">
+                <p>Landing Page</p>
+            </div>
+            <div class="split split-email">
+                <img src="img/html email monitor.png" alt="" srcset="">
+                <p>HTML-Email</p>
+            </div>
+            
+        </div>
+        <a href="#contact"><i class="fa-solid fa-chevron-down portfolio-down" id="contact"></i></a>
+    </section>
+
+    <!--------IMAGES-------->
+
+    <div class="img-bg">
+        <span>&times;</span>
+        <img src="img/readyrick desktop.jpg" alt="" id="img-website">
+        <img src="img/landing page desktop.png" alt="" id="img-landing">
+        <img src="img/html email desktop.png" alt="" id="img-email">
+    </div>
+
+    <!--------CONTACT-------->
+
+    <section class="contact">
+        <h2 class="contact-title">CONTACT</h2>
+        <div class="contact-container">
+            <h3>GET IN TOUCH WITH ME</h3>
+            <br>
+            <i class="fa-solid fa-envelope"></i><span> email: <a href="mailto:tomaslins@gmail.com">tomaslins@gmail.com</a></span>
+            <br><br>
+            <i class="fa-brands fa-whatsapp"></i><span> SMS/Whatsapp: <a href='tel:+17079549388'>+1 (707) 954 9388</a></span>
+            <br><br>
+            <i class="fa-brands fa-facebook-square"></i><span> Social media: updating...</span>
+            <img src="img/bolt yellow.png" alt="" class="bolt-yellow">
+        </div>     
+    </section>
+
+    <a href="#"><i class="fa-solid fa-chevron-down portfolio-down" id="home"></i></a>
+
+    
+
+    <!-------JS EXTERNAL LINK----->
+
+    <script src="script.js"></script>
+</body>
+</html>
